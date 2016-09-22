@@ -3,3 +3,5 @@ sudo: false # faster builds
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  -oraclejdk8
+  mvn test
