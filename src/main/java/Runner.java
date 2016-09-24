@@ -7,7 +7,7 @@ import java.util.Locale;
 
 
 public class Runner {
-    private static final Logger logger = Logger.getLogger(String.valueOf(Runner.class));
+    private static final Logger logger = Logger.getLogger(Runner.class);
 
     public static void main(String[] args) throws IOException {
         BasicConfigurator.configure();
