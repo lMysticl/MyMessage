@@ -1,8 +1,10 @@
 package greetingmessages;
 
 
+import org.apache.log4j.Logger;
+
 import java.util.Date;
-import java.util.logging.Logger;
+
 
 class GreetingMessageConstructor implements MessageConstructor {
     private static Logger log = Logger.getLogger(GreetingMessageConstructor.class.getName());
