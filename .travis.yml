@@ -1,11 +1,12 @@
 language: java
-mvn test
-sudo: false # faster builds
- alternatives --config java
- alternatives --config javac
- alternatives --config jre_openjdk
- alternatives --config java_sdk_openjdk
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
 
+sudo: required
 
+jdk:
+  - oraclejdk8
+
+install: true
+
+script:
+  - sudo apt-get update && sudo apt-get install oracle-java8-installer
+  - java -version
